@@ -31,8 +31,15 @@ export default function Selection() {
 
   // Handle final submission (logging to console for now)
   const handleFindResources = () => {
-    console.log('Selected Services:', selectedServices);
-    // Later, navigate to a results page or fetch data from your server
+    const selectedAny = Object.values(selectedServices).some((val) => val);
+
+  if (!selectedAny) {
+    alert("Please select at least one service before continuing.");
+    return;
+  }
+
+  console.log("Selected Services:", selectedServices);
+  router.push("/results");
   };
 
   return (
