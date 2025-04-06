@@ -12,10 +12,12 @@
   }
   
   .pageTitle {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #111;
   }
+  
   
   .controls {
     display: flex;
@@ -24,6 +26,10 @@
     margin-bottom: 1rem;
     flex-wrap: wrap;
   }
+
+  .controls > * {
+    margin: 0.5rem;
+  }  
   
   .filterButton,
   .sortSelect {
@@ -80,6 +86,12 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }  
   
   .cardTitle {
     font-size: 1.4rem;
@@ -111,6 +123,7 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s;
+    width: 100%;
   }
   
   .reviewButton:hover {
