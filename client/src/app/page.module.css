@@ -1,30 +1,52 @@
+/* Overall Layout */
 .main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #0070f3;
+  color: white;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* Hero Section for Home Page */
+.hero {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 0 2rem;
-  background-color: #f9f9f9;
-}
-
-.hero {
   text-align: center;
-  max-width: 800px;
+  padding: 2rem;
 }
 
 .title {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #333;
 }
 
 .description {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  color: #555;
 }
 
+/* Button Styling */
 .button {
   background-color: #0070f3;
   color: #fff;
@@ -35,11 +57,50 @@
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  margin: 20px auto;
-  display: block;
-  text-align: center;
 }
 
 .button:hover {
   background-color: #005bb5;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+}
+
+/* Container for Services Page */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Form Styling for Services Page */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 1.5rem; /* Bigger label text */
+  color: #000;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.textbox {
+  width: 300px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
 }
