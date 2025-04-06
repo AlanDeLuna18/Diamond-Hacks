@@ -2,14 +2,18 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
 
 export default function Services() {
   const [city, setCity] = useState('');
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('City:', city);
+
+    router.push('/services/selection');
   };
 
   return (
