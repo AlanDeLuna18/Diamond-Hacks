@@ -21,7 +21,7 @@
 .backLink {
   display: inline-block;
   margin-bottom: 1rem;
-  color: #6366f1;
+  color: #1e40af;
   text-decoration: none;
   font-weight: 500;
 }
@@ -82,7 +82,7 @@
 
 /* "Find Resources" button styling */
 .findButton {
-  background-color: #6366f1;
+  background-color: #1e40af;
   border: none;
   color: #fff;
   border-radius: 4px;
@@ -92,5 +92,5 @@
   transition: background-color 0.2s;
 }
 .findButton:hover {
-  background-color: #4f46e5;
+  background-color: #1e40af;
 }

@@ -11,10 +11,14 @@ export default function Services() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('City:', city);
-
+    
+    if (city.trim() === '') {
+      alert('Please enter a city.');
+      return;
+    };
+    
     router.push('/services/selection');
-  };
+  }  
 
   return (
     <main className={styles.main}>
@@ -37,7 +41,7 @@ export default function Services() {
           <input 
             id="city-input"
             type="text"
-            placeholder="San Diego, CA"
+            placeholder="e.g., San Diego, CA"
             value={city}
             onChange={(e) => setCity(e.target.value)}
             className={styles.textbox}
