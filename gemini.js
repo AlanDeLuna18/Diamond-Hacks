@@ -17,6 +17,9 @@ async function getZipcode(preferences, zipcode) {
     }
 }
 
+
+
+
 const testa = "gyms";
 const testb = "Oceanside, CA";
 getZipcode(testa, testb);
