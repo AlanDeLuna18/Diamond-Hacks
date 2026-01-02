@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { get } from "http";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyAx_SFrDQJItOQV2NKwqKz-Rxz7yLL_p5A" });
+const ai = new GoogleGenAI({ apiKey: "" });
 
 
 async function getZipcode(preferences, zipcode) {
